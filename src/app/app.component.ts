@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularCourse-S5-Assignment-4';
+  numbers = []
+
+  onNumberAdded(numberData: {number: number}) {
+    this.numbers.push()
+  }
 }
