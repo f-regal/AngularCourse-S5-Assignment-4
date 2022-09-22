@@ -1,2 +1,9 @@
 <h1>hello</h1>
-<app-game-control (numberIncremented)="onNumberAdded()"></app-game-control>
+<app-game-control (numberIncremented)="onNumberAdded($event)"></app-game-control>
+<div>
+    <app-even *ngFor="let number of numbers"></app-even>
+
+    <app-odd *ngFor="let number of numbers"></app-odd>
+
+        
+</div>
