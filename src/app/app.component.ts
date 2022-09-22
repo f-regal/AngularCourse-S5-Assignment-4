@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularCourse-S5-Assignment-4';
   numbers: number[] = []
+  number: any;
 
   onNumberAdded(numberData: {number: number}) {
     this.numbers.push(numberData.number);
+    this.number = numberData.number;
   }
 }
