@@ -1,6 +1,6 @@
 <app-game-control (numberIncremented)="onNumberAdded($event)"></app-game-control>
 
 <div *ngFor="let number of numbers">
-    <app-even *ngIf="number%2 == 0" [ngStyle]="{color: 'red'}">{{number}}</app-even>
-    <app-odd *ngIf="number%2 != 0" [ngStyle]="{color: 'blue'}">{{number}}</app-odd>
+    <app-even *ngIf="number%2 == 0" [ngStyle]="{color: 'red'}" [number]="number"></app-even>
+    <app-odd *ngIf="number%2 != 0" [ngStyle]="{color: 'blue'}" [number]="number"></app-odd>
 </div>
